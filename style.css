@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 3px;
+}
+
+.item {
+    display: flex;
+    font-size: 2rem;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    background-color: rgb(126, 13, 67);
+}
+
+.box2 {
+    background-color: rgb(242, 35, 104);
+}
+
+.box3 {
+    background-color: tomato;
+}
+
+.box4 {
+    background-color: rgb(124, 3, 154);
+}
+
+.box5 {
+    background-color: green;
+}
+
+.box6 {
+    background-color: gray;
+}
+
+.box7 {
+    background-color: rgb(25, 223, 25);
+}
+
+.box8 {
+    background-color: rgb(63, 5, 252);
+}
+
+.box9 {
+    background-color: springgreen;
+}
+
+.box10 {
+    background-color: rgb(39, 3, 20);
+}
+
+.box11 {
+    background-color: rgb(249, 144, 7);
+}
+
+.box12 {
+    background-color: teal;
+}
+
+@media (min-width:768px) {
+    .box1 {
+        background-color: rgb(126, 13, 67);
+    }
+
+    .box2 {
+        background-color: rgb(242, 35, 104);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .box3 {
+        background-color: tomato;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 7;
+    }
+
+    .box4 {
+        background-color: rgb(124, 3, 154);
+    }
+
+    .box5 {
+        background-color: green;
+    }
+
+    .box6 {
+        background-color: gray;
+        grid-column-start: 6;
+        grid-column-end: 7;
+    }
+
+    .box7 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: rgb(25, 223, 25);
+    }
+
+    .box8 {
+        background-color: rgb(63, 5, 252);
+    }
+
+    .box9 {
+        background-color: springgreen;
+    }
+
+    .box10 {
+        background-color: rgb(39, 3, 20);
+    }
+
+    .box11 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: rgb(249, 144, 7);
+    }
+
+    .box12 {
+        background-color: teal;
+    }
+
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
